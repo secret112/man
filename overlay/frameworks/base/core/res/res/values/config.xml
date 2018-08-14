@@ -399,13 +399,13 @@
         delimited by File.pathSeparator, which defaults to ":" on Android -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
 		<item>/system/priv-app/OneplusShit/OneplusShit.apk</item>
-    </string-array>
+	</string-array>
 
     <!-- Full qualified name of the class that implements
         com.android.internal.os.DeviceKeyHandler interface. -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
 		<item>com.oneplus.shit.settings.KeyHandler</item>
-    </string-array>
+	</string-array>
 
     <!-- Does the device supports fast charging -->
     <bool name="config_FastChargingLedSupported">true</bool>

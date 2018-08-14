@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+
+# OneplusShit
+PRODUCT_PACKAGES += \
+    OneplusShit
+
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
