@@ -61,6 +61,25 @@ persist.hwc.ptor.enable=true
 persist.mdpcomp.4k2kSplit=1
 persist.mdpcomp_perfhint=50
 persist.metadata_dynfps.disable=true
+sdm.debug.disable_skip_validate=1
+debug.sf.recomputecrop=0
+ro.sf.lcd_density=420
+sdm.perf_hint_window=50
+
+# Display power reduction (FOSS)
+ro.vendor.display.sensortype=3
+ro.vendor.display.paneltype=1
+ro.vendor.display.foss=1
+vendor.display.foss.config=1
+vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
+
+# Display properties as per treble compliance
+vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.disable_wb_ubwc=1
+vendor.display.disable_skip_validate=1
+vendor.display.perf_hint_window=50
+
+# Graphics
 ro.opengles.version=196610
 ro.qualcomm.cabl=0
 ro.sf.lcd_density=480
