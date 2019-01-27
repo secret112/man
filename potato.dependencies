@@ -5,7 +5,8 @@
   },
   {
     "repository": "ShreyanshLodha/BlueBolt-OnePlus-2",
-    "target_path": "kernel/oneplus/msm8994"
+    "target_path": "kernel/oneplus/msm8994",
+    "branch": "pie-new"
   },
   {
     "repository": "vendor_oneplus_oneplus2",
