@@ -165,10 +165,6 @@ PRODUCT_PACKAGES += \
     izat.conf \
     sap.conf
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.manager@1.0-java
-
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
