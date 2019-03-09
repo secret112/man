@@ -180,3 +180,4 @@ then
     write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres "60"
     stop perfd
 fi
+# .
