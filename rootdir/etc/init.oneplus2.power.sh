@@ -66,7 +66,7 @@ write /sys/module/lpm_levels/parameters/sleep_disabled 0
 write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
 restorecon -R /sys/devices/system/cpu # must restore after interactive
 write /sys/devices/system/cpu/cpu0/cpufreq/interactive/powersave_bias 0
-write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 302400
+write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 384000
 write /sys/devices/system/cpu/cpu0/cpufreq/interactive/screen_off_maxfreq 0
 
 # configure governor settings for big cluster
