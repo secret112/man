@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_oneplus2.mk
+    $(LOCAL_DIR)/xtended_oneplus2.mk
