@@ -95,28 +95,28 @@ on init
     chmod 0666 /sys/class/leds/led:torch_1/brightness
 
     # Touchscreen
-    chown system system /proc/touchpanel/double_swipe
-    chmod 0660 /proc/touchpanel/double_swipe
-    chown system system /proc/touchpanel/double_tap
-    chmod 0660 /proc/touchpanel/double_tap
-    chown system system /proc/touchpanel/down_swipe
-    chmod 0660 /proc/touchpanel/down_swipe
-    chown system system /proc/touchpanel/draw_circle
-    chmod 0660 /proc/touchpanel/draw_circle
-    chown system system /proc/touchpanel/draw_left_v
-    chmod 0660 /proc/touchpanel/draw_left_v
-    chown system system /proc/touchpanel/draw_reversed_v
-    chmod 0660 /proc/touchpanel/draw_reversed_v
-    chown system system /proc/touchpanel/draw_right_v
-    chmod 0660 /proc/touchpanel/draw_right_v
-    chown system system /proc/touchpanel/draw_v
-    chmod 0660 /proc/touchpanel/draw_v
-    chown system system /proc/touchpanel/left_swipe
-    chmod 0660 /proc/touchpanel/left_swipe
-    chown system system /proc/touchpanel/right_swipe
-    chmod 0660 /proc/touchpanel/right_swipe
-    chown system system /proc/touchpanel/up_swipe
-    chmod 0660 /proc/touchpanel/up_swipe
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0660 /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/up_swipe_enable
+    chmod 0660 /proc/touchpanel/up_swipe_enable
+    chown system system /proc/touchpanel/down_swipe_enable
+    chmod 0660 /proc/touchpanel/down_swipe_enable
+    chown system system /proc/touchpanel/left_swipe_enable
+    chmod 0660 /proc/touchpanel/left_swipe_enable
+    chown system system /proc/touchpanel/right_swipe_enable
+    chmod 0660 /proc/touchpanel/right_swipe_enable
+    chown system system /proc/touchpanel/double_swipe_enable
+    chmod 0660 /proc/touchpanel/double_swipe_enable
+    chown system system /proc/touchpanel/up_arrow_enable
+    chmod 0660 /proc/touchpanel/up_arrow_enable
+    chown system system /proc/touchpanel/down_arrow_enable
+    chmod 0660 /proc/touchpanel/down_arrow_enable
+    chown system system /proc/touchpanel/left_arrow_enable
+    chmod 0660 /proc/touchpanel/left_arrow_enable
+    chown system system /proc/touchpanel/right_arrow_enable
+    chmod 0660 /proc/touchpanel/right_arrow_enable
+    chown system system /proc/touchpanel/letter_o_enable
+    chmod 0660 /proc/touchpanel/letter_o_enable
 
     # Buttons
     chown system system /proc/s1302/key_rep
@@ -134,6 +134,68 @@ on init
     chown system system /proc/tri-state-key/keyCode_bottom
     chmod 0660 /proc/tri-state-key/keyCode_bottom
 
+    # Vibrator permissions
+    chown root system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # Graphics
+    chown system system /sys/class/graphics/fb0/srgb
+    chmod 0664 /sys/class/graphics/fb0/srgb
+    chown system system /sys/class/graphics/fb0/dci_p3
+    chmod 0664 /sys/class/graphics/fb0/dci_p3
+    chown system graphics /sys/class/graphics/fb0/oneplus_mode
+    chmod 0664 /sys/class/graphics/fb0/oneplus_mode
+    chown system graphics /sys/class/graphics/fb0/night_mode
+    chmod 0664 /sys/class/graphics/fb0/night_mode
+    chown system graphics /sys/class/graphics/fb0/hbm
+    chmod 0664 /sys/class/graphics/fb0/hbm
+    chown system graphics /sys/class/graphics/fb0/oneplus_mode
+    chmod 0664 /sys/class/graphics/fb0/oneplus_mode
+
+    # KCAL permissions
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
+  
+    # RGB light
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/green/pause_lo
+
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/green/pause_hi
+
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/green/blink
+
+    chown system system /sys/class/leds/red/ramp_step_ms
+    chown system system /sys/class/leds/blue/ramp_step_ms
+    chown system system /sys/class/leds/green/ramp_step_ms
+
+    chown system system /sys/class/leds/red/duty_pcts
+    chown system system /sys/class/leds/blue/duty_pcts
+    chown system system /sys/class/leds/green/duty_pcts
+
+    chown system system /sys/class/leds/red/start_idx
+    chown system system /sys/class/leds/blue/start_idx
+    chown system system /sys/class/leds/green/start_idx
+
+    chown system system /sys/class/leds/rgb/rgb_blink
+
+  
     # GPU Tuning
     chown root system /sys/class/kgsl/kgsl-3d0/dispatch/inflight
     chmod 0660 /sys/class/kgsl/kgsl-3d0/dispatch/inflight
