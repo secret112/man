@@ -144,9 +144,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OneplusShit
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    OneplusDoze
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \

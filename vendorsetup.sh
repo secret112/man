@@ -1,1 +1,1 @@
-add_lunch_combo xtended_oneplus2-userdebug
+add_lunch_combo colt_oneplus2-userdebug
